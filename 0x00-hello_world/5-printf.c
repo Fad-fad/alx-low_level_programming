@@ -1,6 +1,6 @@
 #include <stdio.h>
-/* 
- * main - we're going to print a phrase
+/**
+ * main -This program is going to print a phrase
  * Return: 0 (Success)
  */
 int main(void)
