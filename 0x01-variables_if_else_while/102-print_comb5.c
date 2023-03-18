@@ -20,7 +20,7 @@ for (k = i; k < 10; k++)
 for (l = 0; l < 10; l++)
 {
 if (i == k && l <= j)
-continue
+continue;
 if (is_first_iteration == false)
 {
 putchar(',');
