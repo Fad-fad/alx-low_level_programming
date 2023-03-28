@@ -13,12 +13,14 @@ for (j = 0; str[j] != '\0';
 j++)
 {}
 if (j % 2 == 0)
-{for (i = j / 2; i < j;
+{
+for (i = j / 2; i < j;
 i++)
 _putchar(str[i]);
 }
 else
-{for (i = (j - 1) / 2; i < j;
+{
+for (i = (j - 1) / 2; i < j;
 i++)
 _putchar(str[i]);
 }
