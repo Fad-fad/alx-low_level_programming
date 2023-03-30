@@ -7,17 +7,19 @@
  * Return: the int converted from the string
  */
 
-char *_strncpy(char *dest, char *src, int n);
+char *_strncpy(char *dest, char *src, int n)
 {
 int i;
 int j;
-for (i = 0; dest[i] != '\0'; i++)
+for (j = 0;
+src[j] != '\0' && j < n; j++)
 {
-}
-for (j = 0; src[j] != '\0' && j < n; j++)
-{
-dest[i] = src[j];
+dest[j] = src[j];
 i++;
+}
+while (j < n)
+{ dest[j] = '\0';
+  j++;
 }
 return (dest);
 }
