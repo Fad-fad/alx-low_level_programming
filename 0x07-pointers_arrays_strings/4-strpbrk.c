@@ -8,24 +8,14 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-int i;
-int j;
-int bol;
-for (i = 0; s[i] != '\0'; i++)
+char *p1, *p2;
+for (p1 = s; *p1 != '\0'; ++p1)
 {
-bol = 0;
-for (j = 0; accept[j] != '\0'; j++)
+for (p2 = accept; *p2 != '\0'; ++p2)
 {
-if (s[i] == accept[j])
-{
-bol = 1;
-break;
+if (*p1 == *p2)
+return (p1);
 }
-}
-if (!bol)
-s++;
-else
-return (s + 1);
 }
 return (0);
 }
