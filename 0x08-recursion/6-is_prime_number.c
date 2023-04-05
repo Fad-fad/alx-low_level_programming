@@ -10,10 +10,10 @@ int check(int n, int a)
 {
 if (n % a == 0)
 return (0);
-else if (a != (n/2))
-return (check (n, a+1));
+else if (a != (n / 2))
+return (check(n, a + 1));
 else
-return(1);
+return (1);
 }
 /**
  * is_prime_number - states if number is prime
@@ -28,5 +28,5 @@ return (0);
 else if (n == 2)
 return (1);
 else
-return(check (n, 2));
+return (check(n, 2));
 }
