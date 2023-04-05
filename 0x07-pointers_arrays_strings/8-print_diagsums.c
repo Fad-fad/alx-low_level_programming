@@ -10,16 +10,18 @@
 void print_diagsums(int *a, int size)
 {
 int i;
-int tl = 0;
-int tr = 0;
-int s = size * size;
-for (i = 0; i < s; i += size + 1)
+int j;
+int d = 0;
+int di= 0;
+for (i = 0; i < size; i++)
 {
-tl += a[i];
+d += a[i][i];
 }
-for (i = size - 1; i < s - 1; i += size - 1)
+j = size - 1;
+for (i = 0; i < size; i++)
 {
-tr += a[i];
+di += a[j][i];
+j--;
 }
-printf("%d, %d\n", tl, tr);
+printf("%d, %d\n", d, di);
 }
