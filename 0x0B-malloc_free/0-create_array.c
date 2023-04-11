@@ -22,6 +22,7 @@ for (i = 0; i < size; i++)
 {
 tab[i] = c;
 }
-}
 return (tab);
+}
+return (0);
 }
