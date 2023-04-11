@@ -11,15 +11,17 @@ char *create_array(unsigned int size, char c)
 {
 char *tab;
 unsigned int i;
-if (size  == 0)
+tab = malloc(size);
+if (tab == NULL)
 {
-return (0);
+return (tab);
 }
-tab = malloc(size + 1);
+else
+{
 for (i = 0; i < size; i++)
 {
 tab[i] = c;
 }
-tab[i] = '\0';
+}
 return (tab);
 }
