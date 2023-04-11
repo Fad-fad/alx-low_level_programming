@@ -18,7 +18,7 @@ for (i = 0; s1[i] != '\0'; i++)
 for (j = 0; s2[j] != '\0'; j++)
 {}
 
-tab = malloc(i + j);
+tab = malloc(i + j + 1);
 if (tab == NULL)
 return (tab);
 else
