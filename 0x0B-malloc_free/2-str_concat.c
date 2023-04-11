@@ -23,15 +23,19 @@ if (tab == NULL)
 return (tab);
 else
 {
-for (k = 0; k < i; k++)
-tab[k] = s1[i];
 q = 0;
-for (k = i - 1; k < i + j; k++)
+for (k = 0; k < i; k++)
+{tab[k] = s1[q];
+q++;
+}
+tab[i] = ' ';
+q = 0;
+for (k = i + 1; k <= i + j; k++)
 {
 tab[k] = s2[q];
 q++;
 }
-tab[i + j] = '\0';
+tab[i + j + 1] = '\0';
 }
 return (tab);
 }
