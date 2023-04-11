@@ -15,10 +15,11 @@ if (size  == 0)
 {
 return (0);
 }
-tab = malloc(size);
+tab = malloc(size + 1);
 for (i = 0; i < size; i++)
 {
 tab[i] = c;
 }
+tab[i] = '\0';
 return (tab);
 }
