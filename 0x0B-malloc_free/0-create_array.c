@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *_strncpy- converts a string to an integer
- * @dest: string to be converted
- * @src: jfjffkkfk
- * @n: intg
+ * *create_array- converts a string to an integer
+ * @size: string to be converted
+ * @c: jfjffkkfk
  * Return: the int converted from the string
  */
 
@@ -21,5 +20,5 @@ for (i = 0; i < size; i++)
 {
 tab[i] = c;
 }
-return(tab);
+return (tab);
 }
