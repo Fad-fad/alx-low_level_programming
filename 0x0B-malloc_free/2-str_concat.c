@@ -13,35 +13,29 @@ int i;
 int j;
 int k;
 int q;
+if (s1 == NULL)
+s1 = '\0';
+if (s2 == NULL)
+s2 = '\0';
 for (i = 0; s1[i] != '\0'; i++)
 {}
 for (j = 0; s2[j] != '\0'; j++)
 {}
-
 tab = malloc(i + j + 1);
 if (tab == NULL)
 return (tab);
 q = 0;
-if (s1 != NULL)
-{
 for (k = 0; k < i; k++)
-{tab[k] = s1[q];
+{
+tab[k] = s1[q];
 q++;
 }
-}
-else
-i = 0;
 q = 0;
-if (s2 != NULL)
-{
 for (k = i; k < i + j; k++)
 {
 tab[k] = s2[q];
 q++;
 }
-}
-else
-j = 0;
 tab[i + j] = '\0';
 return (tab);
 }
