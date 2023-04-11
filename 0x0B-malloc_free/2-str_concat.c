@@ -18,7 +18,7 @@ for (i = 0; s1[i] != '\0'; i++)
 for (j = 0; s2[j] != '\0'; j++)
 {}
 
-tab = malloc(i + j + 1);
+tab = malloc(i + j);
 if (tab == NULL)
 return (tab);
 else
@@ -28,14 +28,13 @@ for (k = 0; k < i; k++)
 {tab[k] = s1[q];
 q++;
 }
-tab[i] = ' ';
 q = 0;
-for (k = i + 1; k <= i + j; k++)
+for (k = i; k < i + j; k++)
 {
 tab[k] = s2[q];
 q++;
 }
-tab[i + j + 1] = '\0';
+tab[i + j] = '\0';
 }
 return (tab);
 }
