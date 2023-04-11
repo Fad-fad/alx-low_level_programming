@@ -24,5 +24,5 @@ tab[i] = c;
 }
 return (tab);
 }
-return (0);
+return (tab);
 }
