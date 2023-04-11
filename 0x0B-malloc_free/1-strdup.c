@@ -15,7 +15,7 @@ if (str == NULL)
 return (0);
 for (i = 0; str[i] != '\0'; i++)
 {}
-tab = malloc(i);
+tab = malloc(i + 1);
 if (tab == NULL)
 return (0);
 for (j = 0; j <= i; j++)
