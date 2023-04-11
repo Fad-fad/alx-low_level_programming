@@ -16,6 +16,10 @@ if (size == 0)
 return (0);
 }
 tab = malloc(size);
+if (tab == NULL)
+{
+return (0);
+}
 else
 {
 for (i = 0; i < size; i++)
