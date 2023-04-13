@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * alloc_grid - creates a 2 dimensional integer grid
- * @width: the width of the grid
- * @height: the height of the grid
- *
+ * *string_nconcat - creates a 2 dimensional integer grid
+ * @s1: the width of the grid
+ * @s2: the height of the grid
+ * @n: unsigned
  * Return: point
  *
  */
