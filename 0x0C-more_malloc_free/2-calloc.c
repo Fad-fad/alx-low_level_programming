@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdlib.h>
+#include <string.h>
 /**
  * _calloc - Allocate and zero-initialize memory
  * @nmemb: Number of elements to allocate
@@ -19,8 +22,7 @@ ptr = malloc(nmemb * size);
 if (ptr == NULL)
 return (0);
 
-for (i = 0; i < nmemb * size; i++)
-((int *)ptr + i) = 0;
+memset(ptr, 0, nmemb * size);
 
 return (ptr);
 }
