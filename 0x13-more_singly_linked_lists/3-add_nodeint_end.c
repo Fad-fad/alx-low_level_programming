@@ -19,12 +19,18 @@ return (NULL);
 fin = malloc(sizeof(listint_t));
 if (fin == NULL)
 return (NULL);
-while (ptr != NULL)
+fin->n = n;
+fin->next = NULL;
+if (*head == NULL)
+{
+*head = fin;
+return (fin);
+}
+while (ptr->next != NULL)
 {
 ptr = ptr->next;
 }
 ptr->next = fin;
-fin->next = NULL;
-fin->n = n;
 return (fin);
 }
+
