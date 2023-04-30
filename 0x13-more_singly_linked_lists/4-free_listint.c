@@ -16,4 +16,4 @@ while (head != NULL)
 rempl = head;
 head = head->next;
 free(rempl);
-}
+}}
