@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include <stdarg.h>
 #include <stddef.h>
 #include <unistd.h>
-#include <string.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -12,11 +10,10 @@
  */
 void free_listint(listint_t *head)
 {
-listint_t *current, *temp;
-current = head;
-while (current != NULL)
+listint_t *rempl;
+while (head != NULL)
 {
-temp = current;
-urrent = current->next;
-free(temp);
+rempl = head;
+head = head->next;
+free(rempl);
 }
