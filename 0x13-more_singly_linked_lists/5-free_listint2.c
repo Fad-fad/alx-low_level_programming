@@ -10,9 +10,9 @@
 void free_listint2(listint_t **head)
 {
 listint_t *rempl, *helper;
-helper = *head;
-if (head == NULL || *head == NULL)
+if (head == NULL)
 return;
+helper = *head;
 while (helper != NULL)
 {
 rempl = helper->next;
