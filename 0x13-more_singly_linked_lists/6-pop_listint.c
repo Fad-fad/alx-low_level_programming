@@ -8,10 +8,10 @@
  */
 int pop_listint(listint_t **head)
 {
-listint_t reserve;
+listint_t *reserve;
 int n;
-n = *head->n;
-reserve = *head->next;
+n = (*head)->n;
+reserve = (*head)->next;
 free(*head);
 *head = reserve;
 return (n);
