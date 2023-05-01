@@ -14,13 +14,18 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *new, *helper;
 new = malloc(sizeof(list_t));
-if (head == NULL || new == NULL)
+if (head == NULL || new == NULL || str == NULL)
 return (NULL);
 helper = *head;
 new->str = strdup(str);
 new->len = strlen(str);
 new->next = NULL;
-while (helper != NULL)
+if (helper == NULL)
+{
+helper = new;
+return (new);
+}
+while (helper->next != NULL)
 {
 helper = helper->next;
 }
