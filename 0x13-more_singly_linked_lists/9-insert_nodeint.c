@@ -20,15 +20,14 @@ listint_t *reserve;
 new = malloc(sizeof(listint_t));
 if (head == NULL || new == NULL)
 {
-free (new);
 return (NULL);
 }
+new->n = n;
 parcourt = *head;
 i = 0;
 if (i == idx)
 {
-new->n = n;
-new->next = NULL;
+new->next = parcourt;
 *head = new;
 return (new);
 }
@@ -42,6 +41,5 @@ return (NULL);
 reserve = parcourt->next;
 parcourt->next = new;
 new->next = reserve;
-new->n = n;
 return (new);
 }
