@@ -19,10 +19,14 @@ listint_t *az = head;
 unsigned int i, pm = 0;
 if (head == NULL)
 return (NULL);
-for (i = 0; az != NULL; i++, pm++)
+for (i = 0; az != NULL; i++)
 {
 if (pm == index)
+{
 break;
+}
+az = az->next;
+pm++;
 }
 return (az);
 }
