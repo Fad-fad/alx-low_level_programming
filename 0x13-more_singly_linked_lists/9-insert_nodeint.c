@@ -23,7 +23,10 @@ return (NULL);
 parcourt = *head;
 i = 0;
 while (i < idx)
+{
 parcourt = parcourt->next;
+i++;
+}
 reserve = parcourt->next;
 parcourt->next = new;
 new->n = n;
