@@ -35,8 +35,9 @@ for (j = 0; parcourt != NULL; j++)
 {
 parcourt = parcourt->next;
 }
-if (parcourt->next == NULL && idx >= 2 + (j - 1))
+if (idx >= 2 + (j - 1))
 return (NULL);
+parcourt = *head;
 while (i < idx - 1)
 {
 parcourt = parcourt->next;
