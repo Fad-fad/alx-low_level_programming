@@ -27,6 +27,8 @@ while (i < idx)
 parcourt = parcourt->next;
 i++;
 }
+if (parcourt == NULL)
+return (NULL);
 reserve = parcourt->next;
 parcourt->next = new;
 new->n = n;
