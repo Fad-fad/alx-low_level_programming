@@ -32,7 +32,7 @@ new->next = NULL;
 *head = new;
 return (new);
 }
-while (i < idx)
+while (i < idx - 1)
 {
 parcourt = parcourt->next;
 i++;
