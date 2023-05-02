@@ -19,9 +19,19 @@ listint_t *new, *parcourt;
 listint_t *reserve;
 new = malloc(sizeof(listint_t));
 if (head == NULL || new == NULL)
+{
+free (new);
 return (NULL);
+}
 parcourt = *head;
 i = 0;
+if (i == idx)
+{
+new->n = n;
+new->next = NULL;
+*head = new;
+return (new);
+}
 while (i < idx)
 {
 parcourt = parcourt->next;
@@ -31,7 +41,7 @@ if (parcourt == NULL)
 return (NULL);
 reserve = parcourt->next;
 parcourt->next = new;
-new->n = n;
 new->next = reserve;
+new->n = n;
 return (new);
 }
