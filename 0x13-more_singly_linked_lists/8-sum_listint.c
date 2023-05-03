@@ -11,7 +11,7 @@
  *
  * Return: sum of all the data (n) of the list, or 0 if list is empty
  */
-int sum_listint(listint_t *head);
+int sum_listint(listint_t *head)
 {
 listint_t *yo = head;
 int num = 0;
@@ -21,5 +21,5 @@ for (i = 0; yo != NULL; i++)
 num += yo->n;
 yo =  yo->next;
 }
-Return (num);
+return (num);
 }
