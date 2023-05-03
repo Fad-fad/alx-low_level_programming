@@ -18,9 +18,9 @@ return;
 tr = *head;
 while (tr != NULL)
 {
-fr = tr;
-tr = tr->next;
-free(fr);
+fr = tr->next;
+free(tr);
+tr = fr;
 }
 *head = NULL;
 }
