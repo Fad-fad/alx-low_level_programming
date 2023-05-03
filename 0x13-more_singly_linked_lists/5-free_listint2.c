@@ -9,15 +9,14 @@
  */
 void free_listint2(listint_t **head)
 {
-listint_t *rempl, *helper;
-if (head == NULL)
-return;
-helper = *head;
-while (helper != NULL)
+listint_t *tr = *head;
+listint_t *fr;
+while (tr != NULL)
 {
-rempl = helper->next;
-free(helper);
-helper = rempl;
+fr = tr->next;
+free(tr);
+tr = fr;
 }
 *head = NULL;
+return;
 }
