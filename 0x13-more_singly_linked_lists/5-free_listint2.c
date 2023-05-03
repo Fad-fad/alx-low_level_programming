@@ -22,5 +22,4 @@ tr = tr->next;
 free(fr);
 }
 *head = NULL;
-return;
 }
