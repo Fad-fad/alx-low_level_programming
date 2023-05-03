@@ -18,11 +18,11 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 unsigned int i, j;
 listint_t *parcourt;
 if (head == NULL)
-return NULL;
+return (NULL);
 if (index == 0)
 return (head);
 parcourt = head;
-for (j=0; parcourt != NULL; j++)
+for (j = 0; parcourt != NULL; j++)
 {
 parcourt = parcourt->next;
 }
