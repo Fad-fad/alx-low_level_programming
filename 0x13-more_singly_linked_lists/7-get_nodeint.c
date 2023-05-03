@@ -15,18 +15,23 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-listint_t *az = head;
-unsigned int i, pm = 0;
+unsigned int i, j;
+listint_t *parcourt;
 if (head == NULL)
+return NULL;
+if (index == 0)
+return (head);
+parcourt = head;
+for (j=0; parcourt != NULL; j++)
+{
+parcourt = parcourt->next;
+}
+if (index >= j)
 return (NULL);
-for (i = 0; az != NULL; i++)
+parcourt = head;
+for (i = 0; i < index - 1; i++)
 {
-if (pm == index)
-{
-break;
+parcourt = parcourt->next;
 }
-az = az->next;
-pm++;
-}
-return (az);
+return (parcourt->next);
 }
