@@ -11,14 +11,15 @@
  *
  * Return: sum of all the data (n) of the list, or 0 if list is empty
  */
-int sum_listint(listint_t *head)
+int sum_listint(listint_t *head);
 {
-int sum = 0;
-listint_t *zr = head;
-while (zr != NULL)
+listint_t *yo = head;
+int num = 0;
+int i;
+for (i = 0; yo != NULL; i++)
 {
-sum += zr->n;
-zr = zr->next;
+num += yo->n;
+yo =  yo->next;
 }
-return (sum);
+Return (num);
 }
