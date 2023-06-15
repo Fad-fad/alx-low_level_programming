@@ -16,5 +16,5 @@ return (current);
 current = current->next;
 count++;
 }
-return (NULL);
+return (current);
 }
