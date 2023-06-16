@@ -17,7 +17,7 @@ if (index == 0)
 {
 *head = (*head)->next;
 if (*head != NULL)
-(*head)->prev = NULL;		
+(*head)->prev = NULL;
 free(current);
 return (1);
 }
