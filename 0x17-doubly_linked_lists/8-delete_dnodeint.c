@@ -19,7 +19,7 @@ if (index == 0)
 {
 del = *head;
 *head = (*head)->next;
-free (del);
+free(del);
 if (*head != NULL)
 	(*head)->prev = NULL;
 return (1);
